@@ -25,6 +25,7 @@ body {
 h1,
 h2 {
   font-family: var(--heading-font);
+  font-size: 48px;
 }
 
 header {
@@ -67,26 +68,32 @@ nav a:hover {
   height: auto;
   position: relative;
 }
-h1 {
+article .img-bckgd {
+  width: 150px;
+  float: right;
+  margin-top: 10px;
+  margin-right: 10px;
+  margin-bottom: 10px;
+}
+article h1 {
   position: absolute;
-  margin-top: -550px;
+  margin-top: -570px;
   margin-left: 0;
   margin-right: 0;
-  width: 931px;
+  width: 920px;
   height: 25px;
   color: rgb(192, 182, 182);
   background-color: rgba(0, 0, 0, 0.5);
   text-align: center;
-  padding: 15px;
+  padding: 20px;
 }
-article {
+.box {
   box-sizing: border-box;
   position: absolute;
   margin-top: -300px;
   margin-left: 130px;
   margin-right: 600px;
   background-color: rgba(4, 4, 59, 0.6);
-  width: 700px;
 }
 
 article p {
@@ -94,12 +101,6 @@ article p {
   color: aliceblue;
 }
 
-.img-bckgd {
-  float: right;
-  margin-top: 10px;
-  margin-right: 10px;
-  margin-bottom: 10px;
-}
 h2 {
   color: black;
 }
