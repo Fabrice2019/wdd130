@@ -1,0 +1,108 @@
+@import url("https://fonts.googleapis.com/css2?family=Josefin+Sans:ital,wght@0,100..700;1,100..700&family=Roboto&display=swap");
+
+:root {
+  --primary-color: #064e8d;
+  --secondary-color: #e68f26;
+  --accent1-color: #fff;
+  --accent2-color: #000000;
+
+  --heading-font: "josefin sans", serif;
+  --paragraph-font: Roboto, serif;
+
+  --nav-background-color: #fff;
+  --nav-link-color: #064e8d;
+  --nav-hover-link-color: #fff;
+  --nav-hover-background-color: rgba(6, 78, 141, 0.8);
+}
+
+body {
+  margin-top: 0;
+  font-family: var(--paragraph-font);
+  max-width: 960px;
+  padding: 20px;
+}
+
+h1,
+h2 {
+  font-family: var(--heading-font);
+}
+
+header {
+  padding: 20px;
+  background-color: var(--accent1-color);
+}
+
+p {
+  padding-left: 0px;
+  padding-top: 10px;
+  padding-right: 0px;
+  padding-bottom: 25px;
+}
+
+nav {
+  background-color: var(--nav-background-color);
+  font-size: 1.2rem;
+  display: flex;
+}
+
+nav a {
+  display: block;
+  color: var(--nav-link-color);
+  text-decoration: none;
+  padding: 1rem;
+}
+
+nav a:link,
+nav a:visited {
+  color: var(--nav-link-color);
+}
+
+nav a:hover {
+  color: var(--nav-hover-link-color);
+  background-color: var(--nav-hover-background-color);
+}
+.hero img {
+  display: block;
+  width: 100%;
+  height: auto;
+  position: relative;
+}
+h1 {
+  position: absolute;
+  margin-top: -550px;
+  margin-left: 0;
+  margin-right: 0;
+  width: 931px;
+  height: 25px;
+  color: rgb(192, 182, 182);
+  background-color: rgba(0, 0, 0, 0.5);
+  text-align: center;
+  padding: 15px;
+}
+article {
+  box-sizing: border-box;
+  position: absolute;
+  margin-top: -300px;
+  margin-left: 130px;
+  margin-right: 600px;
+  background-color: rgba(4, 4, 59, 0.6);
+  width: 700px;
+}
+
+article p {
+  margin: 0;
+  color: aliceblue;
+}
+
+.img-bckgd {
+  float: right;
+  margin-top: 10px;
+  margin-right: 10px;
+  margin-bottom: 10px;
+}
+h2 {
+  color: black;
+}
+span {
+  display: block;
+}
