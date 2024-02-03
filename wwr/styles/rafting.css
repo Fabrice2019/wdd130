@@ -31,6 +31,13 @@ h2 {
 header {
   padding: 20px;
   background-color: var(--accent1-color);
+  margin: 1rem auto;
+  display: grid;
+  grid-template-columns: 500px 1fr 1fr;
+  align-items: center;
+  justify-content: center;
+  border-bottom: 1px solid #ccc;
+  max-width: 1000px;
 }
 
 p {
@@ -59,41 +66,39 @@ nav a:visited {
 }
 
 nav a:hover {
-  color: var(--nav-hover-link-color);
-  background-color: var(--nav-hover-background-color);
+  color: grey;
+  /* background-color: var(--nav-hover-background-color); */
 }
-.hero img {
-  display: block;
-  width: 100%;
-  height: auto;
+#hero {
+  border: 2px solid red;
   position: relative;
 }
-article .img-bckgd {
+#hero img {
+  width: 100%;
+  height: auto;
+}
+#hero article .img-bckgd {
   width: 150px;
   float: right;
-  margin-top: 10px;
-  margin-right: 10px;
-  margin-bottom: 10px;
+}
+article {
+  position: absolute;
+  top: 260px;
+  width: 80%;
+  left: 50px;
+  right: 0;
+  background-color: rgba(4, 4, 59, 0.6);
+  padding: 1rem;
 }
 h1 {
   position: absolute;
-  margin-top: -580px;
-  margin-left: 0;
-  margin-right: 0;
-  width: 920px;
-  height: 25px;
+  top: 0;
+  left: 0;
+  right: 0;
+  text-align: center;
+
   color: rgb(192, 182, 182);
   background-color: rgba(0, 0, 0, 0.5);
-  text-align: center;
-  padding: 20px;
-}
-.box {
-  box-sizing: border-box;
-  position: absolute;
-  margin-top: -300px;
-  margin-left: 130px;
-  margin-right: 600px;
-  background-color: rgba(4, 4, 59, 0.6);
 }
 
 article p {
@@ -103,7 +108,45 @@ article p {
 
 h2 {
   color: black;
+  text-align: center;
 }
 span {
   display: block;
+}
+.history {
+  display: flex;
+  align-items: center;
+  text-align: center;
+}
+
+.history_image {
+  max-width: 35%;
+  height: auto;
+  margin: 10px; /* Optional: Add margin for spacing */
+}
+
+.p-history {
+  margin: 0;
+  width: 30%;
+}
+
+.adventures {
+  display: flex;
+  width: 80%;
+  margin: 0;
+}
+.adventures img {
+  width: 100px;
+}
+footer {
+  display: grid;
+  grid-template-columns: 600px 1fr 1fr;
+  margin-top: 80px;
+}
+footer img {
+  width: 20px;
+  margin-top: 10px;
+}
+footer a:hover {
+  color: inherit !important;
 }
