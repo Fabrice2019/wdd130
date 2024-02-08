@@ -13,7 +13,7 @@ body {
 }
 
 form {
-  width: 500px;
+  width: 510px;
   margin: 0 auto;
   padding: 1rem;
   border: 1px solid rgba(0, 0, 0, 0.1);
@@ -25,7 +25,7 @@ header {
   margin: 0 auto;
 }
 
-h1 {
+#h1 {
   margin: 1rem;
   font-size: 1.5em;
   color: navy;
@@ -55,7 +55,7 @@ textarea {
   width: 450px;
 }
 
-#fixedText {
+.fixed-text {
   background-color: #333;
   color: white;
   width: 350px;
