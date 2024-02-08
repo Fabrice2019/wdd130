@@ -55,7 +55,7 @@ textarea {
   width: 450px;
 }
 
-.fixed-text {
+#fixed-text {
   background-color: #333;
   color: white;
   width: 350px;
