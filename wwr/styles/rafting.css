@@ -21,12 +21,6 @@ body {
   padding: 20px;
 }
 
-h1,
-h2 {
-  font-family: var(--heading-font);
-  font-size: 48px;
-}
-
 header {
   padding: 20px;
   background-color: var(--accent1-color);
@@ -91,6 +85,8 @@ h1 {
 
   color: rgb(192, 182, 182);
   background-color: rgba(0, 0, 0, 0.5);
+  font-family: var(--heading-font);
+  font-size: 48px;
 }
 
 article p {
@@ -99,6 +95,8 @@ article p {
 }
 
 h2 {
+  font-family: var(--heading-font);
+  font-size: 48px;
   color: black;
   margin-left: 0;
   margin-top: 40px;
