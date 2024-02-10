@@ -145,6 +145,10 @@ footer a:hover {
 }
 /* Additional Styles for Contact Us Page */
 
+#company-info {
+  margin-top: 60px;
+}
+
 /* Employee Image */
 #employee-profiles img {
   border-radius: 50%;
@@ -212,4 +216,8 @@ footer a:hover {
 }
 iframe {
   border: 0;
+}
+
+#H1 {
+  top: 290px;
 }
