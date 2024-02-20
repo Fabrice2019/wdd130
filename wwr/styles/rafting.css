@@ -1,29 +1,12 @@
 @import url("https://fonts.googleapis.com/css2?family=Josefin+Sans:ital,wght@0,100..700;1,100..700&family=Roboto&display=swap");
-
-:root {
-  --primary-color: #064e8d;
-  --secondary-color: #e68f26;
-  --accent1-color: #fff;
-  --accent2-color: #000000;
-
-  --heading-font: "josefin sans", serif;
-  --paragraph-font: Roboto, serif;
-
-  --nav-background-color: #fff;
-  --nav-link-color: #064e8d;
-  --nav-hover-link-color: #fff;
-  --nav-hover-background-color: rgba(6, 78, 141, 0.8);
-}
 body {
   margin-top: 0;
-  font-family: var(--paragraph-font);
-  /* width: 960px; */
+  font-family: Roboto, serif;
   padding: 20px;
 }
-
 header {
   padding: 20px;
-  background-color: var(--accent1-color);
+  background-color: #fff;
   margin: 1rem auto;
   display: grid;
   grid-template-columns: 500px 1fr 1fr;
@@ -31,31 +14,34 @@ header {
   justify-content: center;
   border-bottom: 1px solid #ccc;
 }
-
 nav {
-  background-color: var(--nav-background-color);
+  background-color: #fff;
   font-size: 1.2rem;
   display: flex;
 }
-
 nav a {
   display: block;
-  color: var(--nav-link-color);
+  color: #064e8d;
   text-decoration: none;
   padding: 1rem;
 }
-
 nav a:link,
 nav a:visited {
-  color: var(--nav-link-color);
+  color: #064e8d;
 }
-
 nav a:hover {
   color: grey;
-  /* background-color: var(--nav-hover-background-color); */
+}
+#head-home {
+  top: 300px;
+  background-color: #212121;
+  padding: 1rem;
+}
+.home-section {
+  position: absolute;
+  top: 380px;
 }
 #hero {
-  border: 2px solid red;
   position: relative;
 }
 #hero img {
@@ -72,7 +58,7 @@ article {
   width: 80%;
   left: 50px;
   right: 0;
-  background-color: rgba(4, 4, 59, 0.6);
+  background-color: rgb(4, 4, 59, 0.6);
   padding: 1rem;
 }
 h1 {
@@ -81,20 +67,17 @@ h1 {
   left: 0;
   right: 0;
   text-align: center;
-
-  color: rgb(192, 182, 182);
-  background-color: rgba(0, 0, 0, 0.5);
-  font-family: var(--heading-font);
+  color: white;
+  background-color: rgb(0, 0, 0, 0.5);
+  font-family: "josefin sans", serif;
   font-size: 48px;
 }
-
 article p {
   margin: 0;
   color: aliceblue;
 }
-
 h2 {
-  font-family: var(--heading-font);
+  font-family: "josefin sans", serif;
   font-size: 48px;
   color: black;
   margin-left: 0;
@@ -108,18 +91,15 @@ span {
   align-items: center;
   text-align: center;
 }
-
 .history_image {
   width: 35%;
   height: auto;
-  margin: 10px; /* Optional: Add margin for spacing */
+  margin: 10px;
 }
-
 .p-history {
   margin: 0;
   width: 30%;
 }
-
 .adventures {
   display: flex;
   width: 80%;
@@ -127,6 +107,19 @@ span {
 }
 .adventures img {
   width: 100px;
+}
+.adventures-home {
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr 1fr 1fr;
+  width: 80%;
+  margin: 0;
+}
+.adventures-home img {
+  width: 100px;
+}
+.footer-home {
+  position: absolute;
+  top: 2900px;
 }
 footer {
   display: grid;
@@ -138,66 +131,55 @@ footer img {
   margin-top: 10px;
 }
 footer a:hover {
-  color: inherit !important;
+  color: inherit !important ;
 }
-/* Additional Styles for Contact Us Page */
-
 .contact-page {
   display: grid;
   grid-template-columns: 1fr 1fr;
 }
-/* Employee Image */
+.home-page {
+  display: grid;
+  grid-template-columns: auto auto auto;
+  grid-gap: 30px;
+}
 #employee-profiles img {
   border-radius: 50%;
   margin-bottom: 10px;
   width: 120px;
 }
-
 #employee-profiles {
-  grid-column: 1/3;
+  grid-column: 1 / 3;
   margin: 0 auto;
 }
 .team-imgs {
   display: flex;
 }
-
-/* Employee Caption */
 #employee-profiles figcaption {
   font-style: italic;
   font-size: 14px;
   color: #666;
 }
-
-/* Form Labels */
 #contact-form label {
   display: block;
   margin-bottom: 5px;
   font-weight: bold;
 }
-
-/* Form Inputs */
 #contact-form input[type="text"],
 #contact-form input[type="email"],
 #contact-form textarea {
   width: 50%;
   padding: 8px;
   margin-bottom: 15px;
-  border: 1px solid #ccc;
+  border: #ccc solid 1px;
   border-radius: 4px;
   box-sizing: border-box;
 }
-
-/* Radio Buttons */
 #contact-form input[type="radio"] {
   margin-right: 5px;
 }
-
-/* Checkbox */
 #contact-form input[type="checkbox"] {
   margin-right: 5px;
 }
-
-/* Submit Button */
 #contact-form .submit-button {
   background-color: #4caf50;
   color: black;
@@ -207,7 +189,6 @@ footer a:hover {
   cursor: pointer;
   font-size: 16px;
 }
-
 #contact-form .submit-button:hover {
   background-color: #45a049;
 }
@@ -216,15 +197,75 @@ iframe {
   width: 400px;
   height: 250px;
 }
-
 #H1 {
   position: inherit;
   padding: 1rem;
-  grid-column: 1/3;
+  grid-column: 1 / 3;
   background-color: #212121;
   color: #fff;
 }
-
+.hero {
+  padding: 15px;
+}
 .wireframe {
   margin-top: 10px;
+}
+main {
+  margin: 20px;
+}
+.cta-button {
+  display: inline-block;
+  padding: 10px 20px;
+  background-color: #4caf50;
+  color: #fff;
+  text-decoration: none;
+  border-radius: 5px;
+}
+.trip {
+  justify-content: center;
+  margin-bottom: 20px;
+}
+.trip img {
+  width: 700px;
+  max-height: 750px;
+  object-fit: cover;
+  border-radius: 5px;
+}
+.trip1 h2 {
+  padding-top: 15px;
+}
+.trip1 {
+  width: 1000px;
+  background-color: #666;
+}
+.trip1 p {
+  width: 200px;
+  float: right;
+}
+.trip2 {
+  width: 1000px;
+  background-color: #666;
+}
+.trip2 p {
+  width: 200px;
+  float: right;
+}
+.trip3 {
+  width: 1000px;
+  background-color: #666;
+}
+.trip3 p {
+  width: 200px;
+  float: right;
+}
+.trip-table {
+  width: 1000px;
+  border-collapse: collapse;
+  margin-top: 50px;
+}
+.trip-table th,
+.trip-table td {
+  border: #ddd solid 1px;
+  padding: 10px;
+  text-align: left;
 }
